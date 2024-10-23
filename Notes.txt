@@ -1,0 +1,5 @@
+Shell Vs Command Module
+-----------------------
+- command module __> just execute simple commands
+- shell module __> use shell environment, means we can use redirections (>, >>), pipes (|), other shell variables
+- whatever works in command module will work in shell module
