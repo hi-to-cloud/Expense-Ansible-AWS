@@ -21,7 +21,7 @@
       enabled: yes
 
   - name: Attempt to login to MySQL
-    ansible.builtin.command: mysql -u root -p'{{ PASSWORD }}'
+    ansible.builtin.command: mysql -u root -p'{{ PASSWORD }}' -e 'SELECT User, Host, authentication_string FROM mysql.user;'
     register: login_output
     ignore_errors: yes
 
